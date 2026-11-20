@@ -33,7 +33,7 @@ opinionated shell around the benchmarks that takes care of this:
 - **Compare.** After all runs finished and post-processing is done, the results can be analyzed with a combination of `jbr-filt` and `jbr-ls`, they can be filtered and tabulated, compared
   against a baseline, and reports can be written.
 
-See this [example report](example-reports/collector-shootout-1-full/index.html) `example-reports/collector-shootout-1-full/index.html` for a real-world example of a report.
+See this [example report](https://github.io?example-reports/collector-shootout-1-full/index.html) `example-reports/collector-shootout-1-full/index.html` for a real-world example of a report.
 
 ## Current limitations
 
