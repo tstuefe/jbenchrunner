@@ -1,10 +1,10 @@
 # jbenchrunner
 
-A command-line harness for scheduling, monitoring and post-analyzing large groups of Java benchmarks; and to do that correctly, reproducibly and in-scale.
+A command-line harness for scheduling, monitoring and post-analyzing large groups of Java benchmarks; and to so reproducibly and in scale.
 
-Written for JVM engineers and performance analysts who don't want to waste time on cumbersome benchmarking logistics.
+Written for JVM engineers and analysts who don't want to waste time on benchmarking logistics.
 
-Note that even though this is pre-V 1.0, it is fully functional already.
+Note that even though this is pre-release V1.0, it is fully functional already.
 
 Supported benchmarks (for now) are: 
  - [DaCapo](https://www.dacapobench.org/) 23.11 (Chopin) and
@@ -17,13 +17,13 @@ Planned, will come soon:
 
 ## What it does
 
-A benchmark run takes minutes to many hours, and a wrong JVM flag or a forgotten
-log option silently wastes time and resources. jbenchrunner is a thin,
+Benchmarks are time consuming, and bad runs waste a lot of time and resources. jbenchrunner is a thin,
 opinionated shell around the benchmarks that takes care of this:
 
 - **Describe, then run.** A batch of runs is described in a `.run.toml` file:
   which benchmark(s) to run, with which JDKs and flags, heap-size sweeps, repetitions ... All of
   it is resolved before starting the first run; as many sanity tests as possible are done prior to the actual runs.
+- **Prevent Errors** Prevents or catches many common errors that could taint benchmark results
 - **Record everything.** Every run gets its own result directory with the
   complete parameters (`info.json`), stdout, stderr, GC log, and a ton of data of
   optional collectors: CPU and memory (`pidstat`, `/proc`), perf counters,
@@ -33,14 +33,17 @@ opinionated shell around the benchmarks that takes care of this:
 - **Compare.** After all runs finished and post-processing is done, the results can be analyzed with a combination of `jbr-filt` and `jbr-ls`, they can be filtered and tabulated, compared
   against a baseline, and reports can be written.
 
-See `example-reports/collector-shootout-1-full/index.html` for an example of a generated report.
+See this [example report](example-reports/collector-shootout-1-full/index.html) `example-reports/collector-shootout-1-full/index.html` for a real-world example of a report.
 
-jbenchrunner does not modify the benchmarks or inject anything into the JVM
-under test.
+## Current limitations
+
+For now, `jbenchrunner` works out-of-the-box only with single JVM processes - any benchmark that is a single, individual process invocation. Therefore, it works well with dacapo or renaissance (the latter once we add support), but supports SpecJBB2015 only in composite mode.
+
+Multi-process setups are possible, but require some additional work.
 
 ## Requirements
 
-- Linux (x86_64 or aarch64). macOS works for trying things out, with fewer
+- Linux (x86_64 or aarch64). macOS works too, but with fewer
   collectors and without machine stabilization.
 - Python 3.11 or newer (standard library only)
 - bash
@@ -204,27 +207,22 @@ jbr-status
 jbr-pp
 
 # 6. Look at the results
-jbr-ls                                  # all runs of the project
-jbr-ls -o RESULTS                       # with result columns
-jbr-filt --tags baseline | jbr-ls       # only some runs
-jbr-ls --report first-look              # report with plots in reports/first-look/
+
+jbr-ls                                              # all runs of the project, default view
+jbr-ls -o name,gc,tags,RESULTS,CPU,MEM,minflt       # ... with a custom set of result columns
+
+ # ... and sorted and grouped and comparing average rss with baseline
+jbr-ls -o name,heapsz,gc,tags,RESULTS,CPU,MEM,minflt -s name,heapsz,gc,tags -g name,heapsz --compare rssavg
+
+jbr-filt -N dacapo.tomcat -t baseline | jbr-ls       # only some runs
+jbr-ls --report first-look                          # report with plots in reports/first-look/
 ```
+
+Note, `--help` is your friend. `jbr-ls` has many options
 
 Every command has `--help`. Other commands: `jbr-failures` lists failed or
 stopped runs, `jbr-retag` changes run tags, `jbr-copy` / `jbr-move` /
 `jbr-move-batch` move results around.
-
-## Documentation
-
-| Document | Covers |
-|---|---|
-| [docs/PRD.md](docs/PRD.md) | Overview, concepts, design decisions |
-| [docs/spec-prepare.md](docs/spec-prepare.md) | Configuration files, `jbr-prepare` |
-| [docs/spec-execute.md](docs/spec-execute.md) | `jbr-execute`, `jbr-status`, collectors, result directories |
-| [docs/spec-post-process.md](docs/spec-post-process.md) | `jbr-pp`, `result.json` |
-| [docs/spec-analyze.md](docs/spec-analyze.md) | `jbr-filt`, `jbr-ls` |
-| [docs/spec-other.md](docs/spec-other.md) | `jbr-init`, `jbr-retag`, `jbr-move`, `jbr-copy`, `jbr-failures`, `jbr-move-batch` |
-| [docs/where-we-need-sudo-and-why.md](docs/where-we-need-sudo-and-why.md) | Every command run as root, and why |
 
 ## License
 
