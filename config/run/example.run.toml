@@ -107,7 +107,7 @@ tags = ["using-coh"]
 jvmargs = [ "-XX:UnlockExperimentalVMOptions", "-XX:+UseCompactObjectHeaders" ]
 
 
-[[runs]]
+#[[runs]]
 # This run measures a different (older) JVM with default options
-tags = ["old-jdk"]
-jdkname = "openjdk-21"
+#tags = ["old-jdk"]
+#jdkname = "openjdk-21"

@@ -187,7 +187,7 @@ you want to compare with each other. It can live anywhere.
 
 ```sh
 # 1. Create a project; this also copies example.run.toml into it
-jbr-init -m "G1 vs. compact object headers" ~/bench/coh
+jbr-init -m "Impact of Compact object headers" ~/bench/coh
 cd ~/bench/coh
 
 # 2. Describe the batch: edit example.run.toml (benchmarks, JDKs, profiles,
