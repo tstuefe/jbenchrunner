@@ -1,0 +1,6 @@
+# dacapo xalan benchmark, large workload
+benchmark = "dacapo"
+sub_benchmark = "xalan"
+datasize = "large"
+iterations = 5
+minheap = 13

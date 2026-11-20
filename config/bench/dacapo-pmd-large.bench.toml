@@ -1,0 +1,6 @@
+# dacapo pmd benchmark, large workload
+benchmark = "dacapo"
+sub_benchmark = "pmd"
+datasize = "large"
+iterations = 5
+minheap = 3519

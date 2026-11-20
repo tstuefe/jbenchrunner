@@ -1,0 +1,14 @@
+2026-08-06T11:40:47.000+02:00
+Monitoring PID 22249
+10.000922525;155891779;;cycles:u;10000922525;100.00;;
+10.000922525;89408798;;cycles:k;10000922525;100.00;;
+10.000922525;<not supported>;Joules;power/energy-pkg/;0;100.00;;
+10.000922525;<not supported>;Joules;power_core/energy-core/;0;100.00;;
+20.011603324;147180864;;cycles:u;20011603324;100.00;;
+20.011603324;97501964;;cycles:k;20011603324;100.00;;
+20.011603324;<not supported>;Joules;power/energy-pkg/;0;100.00;;
+20.011603324;<not supported>;Joules;power_core/energy-core/;0;100.00;;
+21.412872705;11147872;;cycles:u;21412872705;100.00;;
+21.412872705;5185854;;cycles:k;21412872705;100.00;;
+21.412872705;<not supported>;Joules;power/energy-pkg/;0;100.00;;
+21.412872705;<not supported>;Joules;power_core/energy-core/;0;100.00;;

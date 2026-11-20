@@ -1,0 +1,12 @@
+# Example machine config. jbr-prepare uses config/hosts/<hostname>.host.toml,
+# or this file if there is none for the machine; see docs/spec-prepare.md §1.6.
+
+maxheap = 32768
+
+# Benchmark installations on this machine (absolute paths); needed only for
+# the benchmark types actually run.
+# dacapo_dir = "/path/to/dacapo"
+# specjbb_dir = "/path/to/specjbb2015"
+
+# JDK (a JAVA_HOME) the integration tests run benchmarks with; optional.
+# test_jdk = "/path/to/jdk"

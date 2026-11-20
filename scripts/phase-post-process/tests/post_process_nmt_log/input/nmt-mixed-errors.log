@@ -1,0 +1,39 @@
+2026-01-01T10:00:00.000+00:00
+NOT-A-PID-LINE
+
+Native Memory Tracking:
+
+Total: reserved=2000000KB, committed=1000000KB
+       malloc: 50000KB #1000, peak=55000KB #1100
+       mmap:   reserved=1950000KB, committed=950000KB
+
+-                 Java Heap (reserved=900000KB, committed=900000KB)
+                            (mmap: reserved=900000KB, committed=900000KB, at peak)
+
+2026-01-01T10:00:05.000+00:00
+12345:
+
+Native Memory Tracking:
+
+Total: this line is not a valid Total: block at all
+
+-                 Java Heap (reserved=900000KB, committed=900000KB)
+                            (mmap: reserved=900000KB, committed=900000KB, at peak)
+
+2026-01-01T10:00:10.000+00:00
+12345:
+
+Native Memory Tracking:
+
+Total: reserved=2100000KB, committed=1100000KB
+       malloc: 60000KB #1200, peak=65000KB #1300
+       mmap:   reserved=2040000KB, committed=1040000KB
+
+-                 Java Heap (reserved=900000KB, committed=900000KB)
+                            (mmap: reserved=900000KB, committed=900000KB, at peak)
+
+-                       !!! (reserved=10KB, committed=10KB)
+                            (malloc=10KB tag=!!! #1) (at peak)
+
+-                     Class (reserved=5000KB, committed=5000KB)
+                            (malloc=200KB tag=Class #500) (peak=250KB #520)

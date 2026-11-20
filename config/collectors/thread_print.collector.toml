@@ -1,0 +1,2 @@
+# jcmd Thread.print collector; available on both HotSpot and OpenJ9 (verified OpenJ9 26+), output
+# format differs between the two.

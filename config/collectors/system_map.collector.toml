@@ -1,0 +1,4 @@
+# jcmd System.map collector; HotSpot only, JDK 21+ (command absent earlier; OpenJ9 jcmd differs).
+
+[[restrict_to]]
+jdk_type = "openjdk"

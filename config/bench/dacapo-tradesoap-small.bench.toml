@@ -1,0 +1,6 @@
+# dacapo tradesoap benchmark, small workload
+benchmark = "dacapo"
+sub_benchmark = "tradesoap"
+datasize = "small"
+iterations = 5
+minheap = 75

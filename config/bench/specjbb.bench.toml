@@ -1,0 +1,3 @@
+# specjbb2015 single-JVM composite mode
+benchmark = "specjbb"
+minheap = 4096

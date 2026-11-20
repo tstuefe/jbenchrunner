@@ -1,0 +1,21 @@
+# All dacapo large workload benchmarks
+members = [
+    "dacapo-avrora-large",
+    "dacapo-batik-large",
+    "dacapo-biojava-large",
+    "dacapo-cassandra-large",
+    "dacapo-eclipse-large",
+    "dacapo-graphchi-large",
+    "dacapo-h2-large",
+    "dacapo-h2o-large",
+    "dacapo-jme-large",
+    "dacapo-jython-large",
+    "dacapo-kafka-large",
+    "dacapo-luindex-large",
+    "dacapo-lusearch-large",
+    "dacapo-pmd-large",
+    "dacapo-spring-large",
+    "dacapo-sunflow-large",
+    "dacapo-tomcat-large",
+    "dacapo-xalan-large",
+]

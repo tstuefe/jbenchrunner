@@ -1,0 +1,188 @@
+[
+  {
+    "timestamp": "2026-08-06T11:21:32.010+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles": {
+        "value": 218868646,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "L1_dcache_load_misses": {
+        "value": 2048670,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "L1_dcache_loads": {
+        "value": 33837991,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "dTLB_load_misses": {
+        "value": 143456,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "dTLB_loads": {
+        "value": 557006,
+        "unit": null,
+        "multiplex_pct": 100.0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:21:42.020+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles": {
+        "value": 209716310,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "L1_dcache_load_misses": {
+        "value": 2080290,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "L1_dcache_loads": {
+        "value": 34250221,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "dTLB_load_misses": {
+        "value": 145116,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "dTLB_loads": {
+        "value": 578016,
+        "unit": null,
+        "multiplex_pct": 100.0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:21:52.030+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles": {
+        "value": 180891387,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "L1_dcache_load_misses": {
+        "value": 2071360,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "L1_dcache_loads": {
+        "value": 33706701,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "dTLB_load_misses": {
+        "value": 139288,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "dTLB_loads": {
+        "value": 579579,
+        "unit": null,
+        "multiplex_pct": 100.0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:22:02.036+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles": {
+        "value": 198592895,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "L1_dcache_load_misses": {
+        "value": 2036523,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "L1_dcache_loads": {
+        "value": 33660726,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "dTLB_load_misses": {
+        "value": 145202,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "dTLB_loads": {
+        "value": 567488,
+        "unit": null,
+        "multiplex_pct": 100.0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:22:12.038+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles": {
+        "value": 197953622,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "L1_dcache_load_misses": {
+        "value": 2035572,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "L1_dcache_loads": {
+        "value": 33689083,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "dTLB_load_misses": {
+        "value": 146104,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "dTLB_loads": {
+        "value": 561896,
+        "unit": null,
+        "multiplex_pct": 100.0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:22:15.942+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles": {
+        "value": 59519311,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "L1_dcache_load_misses": {
+        "value": 541645,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "L1_dcache_loads": {
+        "value": 9559563,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "dTLB_load_misses": {
+        "value": 51444,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "dTLB_loads": {
+        "value": 172091,
+        "unit": null,
+        "multiplex_pct": 100.0
+      }
+    }
+  }
+]

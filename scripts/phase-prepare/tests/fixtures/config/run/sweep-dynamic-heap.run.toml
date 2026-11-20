@@ -1,0 +1,7 @@
+heapsize_factors = [1.0, 2.0]
+dynamic_heap = true
+bench = "bench-h2"
+
+[[runs]]
+jdkname = "jdk-21"
+profiles = ["g1"]

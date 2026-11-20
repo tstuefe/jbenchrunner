@@ -1,0 +1,6 @@
+# dacapo jython benchmark, default workload
+benchmark = "dacapo"
+sub_benchmark = "jython"
+datasize = "default"
+iterations = 5
+minheap = 31

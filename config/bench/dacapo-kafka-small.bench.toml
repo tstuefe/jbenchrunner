@@ -1,0 +1,6 @@
+# dacapo kafka benchmark, small workload
+benchmark = "dacapo"
+sub_benchmark = "kafka"
+datasize = "small"
+iterations = 5
+minheap = 157

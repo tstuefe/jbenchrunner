@@ -1,0 +1,12 @@
+# dacapo benchmarks that seem to gain a lot by reduced libc retention techniques
+members = [
+    "dacapo-eclipse-large",
+    "dacapo-jme-large",
+    "dacapo-jython-large",
+    "dacapo-luindex-large",
+    "dacapo-lusearch-large",
+    "dacapo-pmd-large",
+    "dacapo-spring-large",
+    "dacapo-tomcat-large",
+    "dacapo-xalan-large",
+]

@@ -1,0 +1,6 @@
+# dacapo pmd benchmark, small workload
+benchmark = "dacapo"
+sub_benchmark = "pmd"
+datasize = "small"
+iterations = 5
+minheap = 7

@@ -1,0 +1,2 @@
+# OpenJ9, Metronome collector
+flags = ["-Xgcpolicy:metronome"]

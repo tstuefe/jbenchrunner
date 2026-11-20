@@ -1,0 +1,130 @@
+[
+  {
+    "timestamp": "2026-08-06T11:34:38.010+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles_u": {
+        "value": 134902453,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "cycles_k": {
+        "value": 97310809,
+        "unit": null,
+        "multiplex_pct": 100.0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:34:48.020+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles_u": {
+        "value": 128671031,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "cycles_k": {
+        "value": 85517506,
+        "unit": null,
+        "multiplex_pct": 100.0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:34:58.030+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles_u": {
+        "value": 126012185,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "cycles_k": {
+        "value": 77492494,
+        "unit": null,
+        "multiplex_pct": 100.0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:35:08.041+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles_u": {
+        "value": 125843175,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "cycles_k": {
+        "value": 77691444,
+        "unit": null,
+        "multiplex_pct": 100.0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:35:18.051+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles_u": {
+        "value": 139991475,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "cycles_k": {
+        "value": 82694374,
+        "unit": null,
+        "multiplex_pct": 100.0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:35:28.061+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles_u": {
+        "value": 120742809,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "cycles_k": {
+        "value": 78191060,
+        "unit": null,
+        "multiplex_pct": 100.0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:35:38.072+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles_u": {
+        "value": 156754802,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "cycles_k": {
+        "value": 84316166,
+        "unit": null,
+        "multiplex_pct": 100.0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:35:42.351+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles_u": {
+        "value": 66180509,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "cycles_k": {
+        "value": 53039827,
+        "unit": null,
+        "multiplex_pct": 100.0
+      }
+    }
+  }
+]

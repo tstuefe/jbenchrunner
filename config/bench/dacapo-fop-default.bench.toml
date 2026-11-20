@@ -1,0 +1,6 @@
+# dacapo fop benchmark, default workload
+benchmark = "dacapo"
+sub_benchmark = "fop"
+datasize = "default"
+iterations = 5
+minheap = 17

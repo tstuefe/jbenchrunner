@@ -1,0 +1,6 @@
+# dacapo tradebeans benchmark, default workload
+benchmark = "dacapo"
+sub_benchmark = "tradebeans"
+datasize = "default"
+iterations = 5
+minheap = 141

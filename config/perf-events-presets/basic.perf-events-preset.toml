@@ -1,0 +1,9 @@
+# Basic CPU counters: cycles, instructions, cache and branch misses. Generic perf
+# names, available on most CPUs; what "cache-misses" counts differs between CPUs.
+events = [
+    "cycles",
+    "instructions",
+    "cache-misses",
+    "cache-references",
+    "branch-misses",
+]

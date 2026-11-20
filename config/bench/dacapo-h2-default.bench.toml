@@ -1,0 +1,6 @@
+# dacapo h2 benchmark, default workload
+benchmark = "dacapo"
+sub_benchmark = "h2"
+datasize = "default"
+iterations = 5
+minheap = 903

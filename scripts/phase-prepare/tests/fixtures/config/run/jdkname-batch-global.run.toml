@@ -1,0 +1,8 @@
+# Batch-level jdkname default used since the entry omits it
+jdkname = "jdk-21"
+tags = ["smoke"]
+bench = "bench-h2"
+
+[[runs]]
+profiles = ["g1"]
+jvmargs = ["-Xmx2048m"]

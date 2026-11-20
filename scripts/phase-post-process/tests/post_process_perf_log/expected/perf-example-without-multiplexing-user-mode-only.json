@@ -1,0 +1,219 @@
+[
+  {
+    "timestamp": "2026-08-06T11:30:05.010+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles_u": {
+        "value": 124787527,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "L1_dcache_load_misses_u": {
+        "value": 899010,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "L1_dcache_loads_u": {
+        "value": 21331769,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "dTLB_load_misses_u": {
+        "value": 117129,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "dTLB_loads_u": {
+        "value": 352323,
+        "unit": null,
+        "multiplex_pct": 100.0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:30:15.013+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles_u": {
+        "value": 136432965,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "L1_dcache_load_misses_u": {
+        "value": 901714,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "L1_dcache_loads_u": {
+        "value": 21462013,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "dTLB_load_misses_u": {
+        "value": 121773,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "dTLB_loads_u": {
+        "value": 356223,
+        "unit": null,
+        "multiplex_pct": 100.0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:30:25.024+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles_u": {
+        "value": 133618655,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "L1_dcache_load_misses_u": {
+        "value": 974166,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "L1_dcache_loads_u": {
+        "value": 23638984,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "dTLB_load_misses_u": {
+        "value": 120699,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "dTLB_loads_u": {
+        "value": 367473,
+        "unit": null,
+        "multiplex_pct": 100.0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:30:35.031+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles_u": {
+        "value": 138839221,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "L1_dcache_load_misses_u": {
+        "value": 893406,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "L1_dcache_loads_u": {
+        "value": 21637281,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "dTLB_load_misses_u": {
+        "value": 122307,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "dTLB_loads_u": {
+        "value": 347086,
+        "unit": null,
+        "multiplex_pct": 100.0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:30:45.041+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles_u": {
+        "value": 119125552,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "L1_dcache_load_misses_u": {
+        "value": 888708,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "L1_dcache_loads_u": {
+        "value": 21449897,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "dTLB_load_misses_u": {
+        "value": 124045,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "dTLB_loads_u": {
+        "value": 347680,
+        "unit": null,
+        "multiplex_pct": 100.0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:30:55.051+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles_u": {
+        "value": 124492712,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "L1_dcache_load_misses_u": {
+        "value": 917027,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "L1_dcache_loads_u": {
+        "value": 22334854,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "dTLB_load_misses_u": {
+        "value": 117050,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "dTLB_loads_u": {
+        "value": 351552,
+        "unit": null,
+        "multiplex_pct": 100.0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:31:02.620+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles_u": {
+        "value": 72363914,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "L1_dcache_load_misses_u": {
+        "value": 714047,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "L1_dcache_loads_u": {
+        "value": 16350642,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "dTLB_load_misses_u": {
+        "value": 89575,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "dTLB_loads_u": {
+        "value": 276036,
+        "unit": null,
+        "multiplex_pct": 100.0
+      }
+    }
+  }
+]

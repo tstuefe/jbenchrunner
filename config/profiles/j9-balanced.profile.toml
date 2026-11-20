@@ -1,0 +1,2 @@
+# OpenJ9, balanced collector
+flags = ["-Xgcpolicy:balanced"]

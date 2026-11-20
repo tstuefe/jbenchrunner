@@ -1,0 +1,6 @@
+# dacapo tradebeans benchmark, small workload
+benchmark = "dacapo"
+sub_benchmark = "tradebeans"
+datasize = "small"
+iterations = 5
+minheap = 73

@@ -1,0 +1,7 @@
+benchgroup = "group-two"
+
+[[runs]]
+jdkname = "jdk-21"
+profiles = ["g1"]
+jvmargs = ["-Xmx2048m"]
+tags = ["group-run"]

@@ -1,0 +1,6 @@
+# dacapo xalan benchmark, default workload
+benchmark = "dacapo"
+sub_benchmark = "xalan"
+datasize = "default"
+iterations = 5
+minheap = 18

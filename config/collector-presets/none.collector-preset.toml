@@ -1,0 +1,4 @@
+# No collectors at all
+interval = 10
+compression = false
+enabled = []

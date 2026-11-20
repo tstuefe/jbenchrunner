@@ -1,0 +1,6 @@
+# dacapo h2o benchmark, default workload
+benchmark = "dacapo"
+sub_benchmark = "h2o"
+datasize = "default"
+iterations = 5
+minheap = 82

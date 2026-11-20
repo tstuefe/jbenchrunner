@@ -1,0 +1,57 @@
+2026-01-01T10:00:00.000+00:00
+12345:
+
+Native Memory Tracking:
+
+(Omitting categories weighting less than 1KB)
+
+Total: reserved=2000000KB, committed=1000000KB
+       malloc: 50000KB #1000, peak=55000KB #1100
+       mmap:   reserved=1950000KB, committed=950000KB
+
+-                 Java Heap (reserved=900000KB, committed=900000KB)
+                            (mmap: reserved=900000KB, committed=900000KB, at peak)
+
+-                     Class (reserved=50000KB, committed=5000KB)
+                            (malloc=200KB tag=Class #500) (peak=250KB #520)
+                            (mmap: reserved=49500KB, committed=4800KB, at peak)
+
+-                    Thread (reserved=10000KB, committed=2000KB)
+                            (malloc=100KB tag=Thread #200) (peak=150KB #210)
+                            (arena=500KB #10) (peak=900KB #12)
+
+-                      Code (reserved=20000KB, committed=3000KB)
+                            (malloc=300KB tag=Code #40) (at peak)
+
+-                   Logging (reserved=0KB, committed=0KB)
+                            (malloc=0KB tag=Logging) (peak=100KB #1)
+
+-    Native Memory Tracking (reserved=500KB, committed=500KB)
+                            (malloc=50KB tag=Native Memory Tracking #100) (peak=60KB #110)
+
+-               Arena Chunk (reserved=1000KB, committed=1000KB)
+                            (malloc=1000KB tag=Arena Chunk #5) (peak=2000KB #6)
+
+2026-01-01T10:00:05.000+00:00
+12345:
+
+Native Memory Tracking:
+
+(Omitting categories weighting less than 1KB)
+
+Total: reserved=2100000KB, committed=1100000KB
+       malloc: 60000KB #1200, peak=65000KB #1300
+       mmap:   reserved=2040000KB, committed=1040000KB
+
+-                 Java Heap (reserved=900000KB, committed=900000KB)
+                            (mmap: reserved=900000KB, committed=900000KB, at peak)
+
+-                     Class (reserved=50000KB, committed=6000KB)
+                            (malloc=220KB tag=Class #520) (at peak)
+                            (mmap: reserved=49500KB, committed=5800KB, at peak)
+
+-                 GCCardSet (reserved=17KB, committed=17KB)
+                            (malloc=17KB tag=GCCardSet #8) (peak=28KB #54)
+
+-               Arena Chunk (reserved=1500KB, committed=1500KB)
+                            (malloc=1500KB tag=Arena Chunk #7) (peak=2000KB #6)

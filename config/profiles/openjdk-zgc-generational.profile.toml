@@ -1,0 +1,2 @@
+# ZGC
+flags = ["-XX:+UseZGC", "-XX:+ZGenerational"]

@@ -1,0 +1,9 @@
+# Subset of dacapo benchmarks that measure latency, large size
+members = [
+    "dacapo-h2-large",
+    "dacapo-jme-large",
+    "dacapo-kafka-large",
+    "dacapo-lusearch-large",
+    "dacapo-spring-large",
+    "dacapo-tomcat-large",
+]

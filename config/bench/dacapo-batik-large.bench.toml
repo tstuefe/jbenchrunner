@@ -1,0 +1,7 @@
+# dacapo batik benchmark, large workload
+benchmark = "dacapo"
+sub_benchmark = "batik"
+datasize = "large"
+iterations = 5
+minheap = 1759
+jvmargs = ["-Djdk.xml.maxElementDepth=1000"]

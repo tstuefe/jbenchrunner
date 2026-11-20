@@ -1,0 +1,25 @@
+{
+  "batchid": "00000000-0000-0000-0000-000000000001",
+  "started_at": "2025-01-01T00:00:00Z",
+  "hostname": "__HOSTNAME__",
+  "collectors": { "interval_secs": 10, "compression": false, "enabled": ["cpu_temp", "pidstat", "proc"], "perf_events": null },
+  "runs": [
+    {
+      "runid": "__RUN_ID__",
+      "seq": 1,
+      "bench_json": "dacapo-fop-small",
+      "jdkname": "test-jdk",
+      "java_home": "__JAVA_HOME__",
+      "profiles": [],
+      "tags": ["integration-test"],
+      "benchmark": "dacapo",
+      "heapsize": 256,
+      "result_dir": "results/__RUN_ID__",
+      "jvmargs": ["-Xms256m", "-Xmx256m", "-XX:+AlwaysPreTouch", "-Xlog:gc:file=gc.log::filecount=0"],
+      "sub_benchmark": "fop",
+      "datasize": "small",
+      "iterations": 1,
+      "dacapo_dir": "__DACAPO_DIR__"
+    }
+  ]
+}

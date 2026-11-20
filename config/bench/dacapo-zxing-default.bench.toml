@@ -1,0 +1,6 @@
+# dacapo zxing benchmark, default workload
+benchmark = "dacapo"
+sub_benchmark = "zxing"
+datasize = "default"
+iterations = 5
+minheap = 322

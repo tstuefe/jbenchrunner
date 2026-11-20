@@ -1,0 +1,10 @@
+# L1 data cache and data TLB. Generic perf names, but not every CPU supports all
+# of them; jbr-prepare checks each event on the host.
+events = [
+    "cycles",
+    "instructions",
+    "L1-dcache-loads",
+    "L1-dcache-load-misses",
+    "dTLB-loads",
+    "dTLB-load-misses",
+]

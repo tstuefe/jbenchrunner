@@ -1,0 +1,6 @@
+benchmark = "dacapo"
+sub_benchmark = "cassandra"
+datasize = "large"
+iterations = 5
+minheap = 2048
+max_java_version = 21

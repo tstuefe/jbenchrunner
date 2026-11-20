@@ -1,0 +1,6 @@
+benchmark = "dacapo"
+sub_benchmark = "noop"
+datasize = "default"
+iterations = 3
+minheap = 256
+min_java_version = 25

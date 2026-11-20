@@ -1,0 +1,5 @@
+# Basic CPU counters: cycles, instructions, cache and branch misses. Generic perf
+# names, available on most CPUs; what "cache-misses" counts differs between CPUs.
+
+# Default is deliberately left empty. It causes perf stat collector to run with
+# the host (cpu, kernel) dependend default set of events

@@ -1,0 +1,6 @@
+# dacapo spring benchmark, large workload
+benchmark = "dacapo"
+sub_benchmark = "spring"
+datasize = "large"
+iterations = 5
+minheap = 65

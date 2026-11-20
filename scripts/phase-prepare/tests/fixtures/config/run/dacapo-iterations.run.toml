@@ -1,0 +1,9 @@
+# Same as plain.run.toml but with an explicit dacapo_iterations override
+dacapo_iterations = 2
+tags = ["smoke"]
+bench = "bench-h2"
+
+[[runs]]
+jdkname = "jdk-21"
+profiles = ["g1"]
+jvmargs = ["-Xmx2048m"]

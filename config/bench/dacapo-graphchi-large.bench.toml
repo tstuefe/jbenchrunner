@@ -1,0 +1,6 @@
+# dacapo graphchi benchmark, large workload
+benchmark = "dacapo"
+sub_benchmark = "graphchi"
+datasize = "large"
+iterations = 5
+minheap = 1196

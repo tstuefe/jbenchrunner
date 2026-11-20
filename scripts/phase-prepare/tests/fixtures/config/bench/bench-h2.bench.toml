@@ -1,0 +1,6 @@
+benchmark = "dacapo"
+sub_benchmark = "h2"
+datasize = "large"
+iterations = 5
+minheap = 1024
+jvmargs = ["-Dfoo=bar"]

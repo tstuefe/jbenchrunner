@@ -1,0 +1,80 @@
+[
+  {
+    "timestamp": "2026-08-06T11:40:57.000+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles_u": {
+        "value": 155891779,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "cycles_k": {
+        "value": 89408798,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "power_energy_pkg": {
+        "value": null,
+        "unit": "Joules",
+        "multiplex_pct": 100.0
+      },
+      "power_core_energy_core": {
+        "value": null,
+        "unit": "Joules",
+        "multiplex_pct": 100.0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:41:07.011+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles_u": {
+        "value": 147180864,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "cycles_k": {
+        "value": 97501964,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "power_energy_pkg": {
+        "value": null,
+        "unit": "Joules",
+        "multiplex_pct": 100.0
+      },
+      "power_core_energy_core": {
+        "value": null,
+        "unit": "Joules",
+        "multiplex_pct": 100.0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:41:08.412+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles_u": {
+        "value": 11147872,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "cycles_k": {
+        "value": 5185854,
+        "unit": null,
+        "multiplex_pct": 100.0
+      },
+      "power_energy_pkg": {
+        "value": null,
+        "unit": "Joules",
+        "multiplex_pct": 100.0
+      },
+      "power_core_energy_core": {
+        "value": null,
+        "unit": "Joules",
+        "multiplex_pct": 100.0
+      }
+    }
+  }
+]

@@ -1,0 +1,5 @@
+benchmark = "dacapo"
+sub_benchmark = "tomcat"
+datasize = "large"
+iterations = 5
+minheap = 512

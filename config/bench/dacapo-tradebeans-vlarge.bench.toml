@@ -1,0 +1,7 @@
+# dacapo tradebeans benchmark, vlarge workload
+benchmark = "dacapo"
+sub_benchmark = "tradebeans"
+datasize = "vlarge"
+iterations = 5
+minheap = 1125
+max_java_version = 21

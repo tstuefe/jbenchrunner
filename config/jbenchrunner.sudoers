@@ -1,0 +1,88 @@
+# jbenchrunner.sudoers - sudoers rules for every command jbenchrunner runs as
+# root (template). See docs/where-we-need-sudo-and-why.md.
+#
+# Grants exactly the commands of prepare-for-benchmarks.sh (machine
+# stabilization), reset-machine.sh (reset before every run) and
+# 'jbr-execute --shutdown', without a password, and nothing else. Each rule
+# matches one exact command line: a call with other or additional arguments
+# is refused by sudo.
+#
+# The rules are granted to the group "jbenchrunners". Every process of every
+# member can use them without a password, the JVM under test included, so
+# keep the group small: best a dedicated benchmark user that is used for
+# nothing else, not your everyday account.
+#
+# Install:
+#   1. Create the group, and a dedicated benchmark user in it (recommended),
+#      or add the account(s) that run benchmarks:
+#        sudo groupadd jbenchrunners
+#        sudo useradd -m -G jbenchrunners jbench       # dedicated user
+#        sudo usermod -aG jbenchrunners <user>         # or: existing account
+#      Membership takes effect at the next login (or after
+#      "newgrp jbenchrunners").
+#   2. Check that the tool paths match this host ("command -v tee sysctl
+#      swapoff systemctl shutdown"; on distros with a merged /usr, /sbin/x and
+#      /usr/sbin/x are the same file, which sudo accepts either way).
+#   3. Validate and install. The installed name must contain no '.', or sudo
+#      ignores the file:
+#        sudo visudo -cf config/jbenchrunner.sudoers
+#        sudo install -o root -g root -m 0440 config/jbenchrunner.sudoers \
+#            /etc/sudoers.d/jbenchrunner
+#   4. Check as the benchmark user, without a sudo ticket ("sudo -k" first):
+#        sudo -n -l /usr/sbin/sysctl kernel.perf_event_paranoid=0
+#
+# To grant the rules to a single user instead of the group, replace
+# "%jbenchrunners" in the last line by the user name. On machines where nobody
+# uses 'jbr-execute --shutdown', drop JBR_SHUTDOWN from that line.
+#
+# Editing rules:
+#   - Never use '*' in an argument: in sudoers arguments it also matches spaces
+#     and slashes, so "tee /sys/.../cpu*/cpufreq/scaling_governor" would allow
+#     "tee /sys/.../cpu0/cpufreq/scaling_governor /etc/sudoers.d/evil
+#     /sys/.../cpu1/cpufreq/scaling_governor", i.e. writing any file as root.
+#     '[0-9]' matches exactly one character and is safe.
+#   - ',', ':', '=' and '\' in an argument must be escaped with '\'.
+
+# CPU frequency settings (prepare-for-benchmarks.sh): governor on CPUs 0-999,
+# turbo boost off (Intel or AMD control). tee takes its value from stdin; the
+# worst a caller can do with these files is set another governor or switch
+# turbo boost back on.
+Cmnd_Alias JBR_CPU = \
+    /usr/bin/tee /sys/devices/system/cpu/cpu[0-9]/cpufreq/scaling_governor, \
+    /usr/bin/tee /sys/devices/system/cpu/cpu[0-9][0-9]/cpufreq/scaling_governor, \
+    /usr/bin/tee /sys/devices/system/cpu/cpu[0-9][0-9][0-9]/cpufreq/scaling_governor, \
+    /usr/bin/tee /sys/devices/system/cpu/intel_pstate/no_turbo, \
+    /usr/bin/tee /sys/devices/system/cpu/cpufreq/boost
+
+# Only needed with FIX_CPU_FREQUENCY=1 in prepare-for-benchmarks.sh (off by
+# default); then also add JBR_CPU_FREQ to the rule at the end.
+# Cmnd_Alias JBR_CPU_FREQ = \
+#     /usr/bin/tee /sys/devices/system/cpu/cpu[0-9]/cpufreq/scaling_max_freq, \
+#     /usr/bin/tee /sys/devices/system/cpu/cpu[0-9][0-9]/cpufreq/scaling_max_freq, \
+#     /usr/bin/tee /sys/devices/system/cpu/cpu[0-9][0-9][0-9]/cpufreq/scaling_max_freq
+
+# Kernel and memory settings (prepare-for-benchmarks.sh), dropping the page
+# cache (prepare-for-benchmarks.sh, reset-machine.sh).
+Cmnd_Alias JBR_KERNEL = \
+    /usr/sbin/sysctl kernel.randomize_va_space\=0, \
+    /usr/sbin/sysctl kernel.perf_event_paranoid\=0, \
+    /usr/sbin/sysctl vm.overcommit_memory\=2, \
+    /usr/sbin/sysctl vm.overcommit_ratio\=100, \
+    /usr/sbin/swapoff -a, \
+    /usr/bin/tee /proc/sys/vm/drop_caches
+
+# Services stopped by prepare-for-benchmarks.sh; journald restarted by
+# reset-machine.sh.
+Cmnd_Alias JBR_SERVICES = \
+    /usr/bin/systemctl stop irqbalance, \
+    /usr/bin/systemctl stop bluetooth, \
+    /usr/bin/systemctl stop cups, \
+    /usr/bin/systemctl stop avahi-daemon.socket, \
+    /usr/bin/systemctl stop avahi-daemon, \
+    /usr/bin/systemctl stop cron, \
+    /usr/bin/systemctl restart systemd-journald
+
+# jbr-execute --shutdown
+Cmnd_Alias JBR_SHUTDOWN = /usr/sbin/shutdown -h now
+
+%jbenchrunners ALL=(root) NOPASSWD: JBR_CPU, JBR_KERNEL, JBR_SERVICES, JBR_SHUTDOWN

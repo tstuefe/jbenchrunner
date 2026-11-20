@@ -1,0 +1,5 @@
+# Collectors with no measurable effect on the benchmark. Default when a run sets neither collectors
+# nor collectors_preset.
+interval = 1
+compression = true
+enabled = ["cpu_temp", "pidstat", "proc"]

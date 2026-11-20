@@ -1,0 +1,6 @@
+# dacapo batik benchmark, small workload
+benchmark = "dacapo"
+sub_benchmark = "batik"
+datasize = "small"
+iterations = 5
+minheap = 19

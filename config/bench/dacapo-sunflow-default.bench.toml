@@ -1,0 +1,6 @@
+# dacapo sunflow benchmark, default workload
+benchmark = "dacapo"
+sub_benchmark = "sunflow"
+datasize = "default"
+iterations = 5
+minheap = 33

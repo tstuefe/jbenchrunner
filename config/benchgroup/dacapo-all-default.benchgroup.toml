@@ -1,0 +1,23 @@
+# All dacapo default workload benchmarks
+members = [
+    "dacapo-avrora-default",
+    "dacapo-batik-default",
+    "dacapo-biojava-default",
+    "dacapo-cassandra-default",
+    "dacapo-eclipse-default",
+    "dacapo-fop-default",
+    "dacapo-graphchi-default",
+    "dacapo-h2-default",
+    "dacapo-h2o-default",
+    "dacapo-jme-default",
+    "dacapo-jython-default",
+    "dacapo-kafka-default",
+    "dacapo-luindex-default",
+    "dacapo-lusearch-default",
+    "dacapo-pmd-default",
+    "dacapo-spring-default",
+    "dacapo-sunflow-default",
+    "dacapo-tomcat-default",
+    "dacapo-xalan-default",
+    "dacapo-zxing-default",
+]

@@ -1,0 +1,781 @@
+[
+  {
+    "timestamp": "2026-08-06T11:18:26.010+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles": {
+        "value": 198042212,
+        "unit": null,
+        "multiplex_pct": 77.73
+      },
+      "L1_dcache_load_misses": {
+        "value": 2160085,
+        "unit": null,
+        "multiplex_pct": 80.08
+      },
+      "L1_dcache_loads": {
+        "value": 34958813,
+        "unit": null,
+        "multiplex_pct": 79.72
+      },
+      "dTLB_load_misses": {
+        "value": 157800,
+        "unit": null,
+        "multiplex_pct": 72.51
+      },
+      "dTLB_loads": {
+        "value": 560159,
+        "unit": null,
+        "multiplex_pct": 64.75
+      },
+      "instructions": {
+        "value": 75401615,
+        "unit": null,
+        "multiplex_pct": 58.71
+      },
+      "branches": {
+        "value": 18328299,
+        "unit": null,
+        "multiplex_pct": 66.49
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:18:36.021+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles": {
+        "value": 230203432,
+        "unit": null,
+        "multiplex_pct": 71.08
+      },
+      "L1_dcache_load_misses": {
+        "value": 1980946,
+        "unit": null,
+        "multiplex_pct": 75.56
+      },
+      "L1_dcache_loads": {
+        "value": 33657806,
+        "unit": null,
+        "multiplex_pct": 74.62
+      },
+      "dTLB_load_misses": {
+        "value": 139486,
+        "unit": null,
+        "multiplex_pct": 75.33
+      },
+      "dTLB_loads": {
+        "value": 566490,
+        "unit": null,
+        "multiplex_pct": 77.48
+      },
+      "instructions": {
+        "value": 80589477,
+        "unit": null,
+        "multiplex_pct": 66.04
+      },
+      "branches": {
+        "value": 19133767,
+        "unit": null,
+        "multiplex_pct": 59.89
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:18:46.032+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles": {
+        "value": 195172997,
+        "unit": null,
+        "multiplex_pct": 71.61
+      },
+      "L1_dcache_load_misses": {
+        "value": 1930003,
+        "unit": null,
+        "multiplex_pct": 73.13
+      },
+      "L1_dcache_loads": {
+        "value": 33069483,
+        "unit": null,
+        "multiplex_pct": 72.41
+      },
+      "dTLB_load_misses": {
+        "value": 149733,
+        "unit": null,
+        "multiplex_pct": 76.28
+      },
+      "dTLB_loads": {
+        "value": 600548,
+        "unit": null,
+        "multiplex_pct": 71.44
+      },
+      "instructions": {
+        "value": 88239137,
+        "unit": null,
+        "multiplex_pct": 66.65
+      },
+      "branches": {
+        "value": 19312943,
+        "unit": null,
+        "multiplex_pct": 68.47
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:18:56.043+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles": {
+        "value": 182144698,
+        "unit": null,
+        "multiplex_pct": 67.25
+      },
+      "L1_dcache_load_misses": {
+        "value": 2004389,
+        "unit": null,
+        "multiplex_pct": 66.22
+      },
+      "L1_dcache_loads": {
+        "value": 33822234,
+        "unit": null,
+        "multiplex_pct": 71.53
+      },
+      "dTLB_load_misses": {
+        "value": 135021,
+        "unit": null,
+        "multiplex_pct": 77.71
+      },
+      "dTLB_loads": {
+        "value": 607396,
+        "unit": null,
+        "multiplex_pct": 70.12
+      },
+      "instructions": {
+        "value": 85562386,
+        "unit": null,
+        "multiplex_pct": 75.52
+      },
+      "branches": {
+        "value": 19085819,
+        "unit": null,
+        "multiplex_pct": 71.65
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:19:06.053+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles": {
+        "value": 237533480,
+        "unit": null,
+        "multiplex_pct": 68.26
+      },
+      "L1_dcache_load_misses": {
+        "value": 1987517,
+        "unit": null,
+        "multiplex_pct": 65.44
+      },
+      "L1_dcache_loads": {
+        "value": 33520594,
+        "unit": null,
+        "multiplex_pct": 68.48
+      },
+      "dTLB_load_misses": {
+        "value": 143052,
+        "unit": null,
+        "multiplex_pct": 73.17
+      },
+      "dTLB_loads": {
+        "value": 555010,
+        "unit": null,
+        "multiplex_pct": 75.17
+      },
+      "instructions": {
+        "value": 86465956,
+        "unit": null,
+        "multiplex_pct": 76.16
+      },
+      "branches": {
+        "value": 19554010,
+        "unit": null,
+        "multiplex_pct": 73.32
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:19:16.064+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles": {
+        "value": 191798809,
+        "unit": null,
+        "multiplex_pct": 68.92
+      },
+      "L1_dcache_load_misses": {
+        "value": 1967311,
+        "unit": null,
+        "multiplex_pct": 70.79
+      },
+      "L1_dcache_loads": {
+        "value": 32464312,
+        "unit": null,
+        "multiplex_pct": 72.01
+      },
+      "dTLB_load_misses": {
+        "value": 148252,
+        "unit": null,
+        "multiplex_pct": 77.0
+      },
+      "dTLB_loads": {
+        "value": 568879,
+        "unit": null,
+        "multiplex_pct": 75.78
+      },
+      "instructions": {
+        "value": 83134684,
+        "unit": null,
+        "multiplex_pct": 69.03
+      },
+      "branches": {
+        "value": 19188773,
+        "unit": null,
+        "multiplex_pct": 66.48
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:19:26.075+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles": {
+        "value": 199843565,
+        "unit": null,
+        "multiplex_pct": 62.23
+      },
+      "L1_dcache_load_misses": {
+        "value": 2210354,
+        "unit": null,
+        "multiplex_pct": 64.05
+      },
+      "L1_dcache_loads": {
+        "value": 36977356,
+        "unit": null,
+        "multiplex_pct": 69.54
+      },
+      "dTLB_load_misses": {
+        "value": 134704,
+        "unit": null,
+        "multiplex_pct": 76.84
+      },
+      "dTLB_loads": {
+        "value": 534135,
+        "unit": null,
+        "multiplex_pct": 78.43
+      },
+      "instructions": {
+        "value": 83939870,
+        "unit": null,
+        "multiplex_pct": 80.6
+      },
+      "branches": {
+        "value": 18870282,
+        "unit": null,
+        "multiplex_pct": 68.31
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:19:36.086+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles": {
+        "value": 191580199,
+        "unit": null,
+        "multiplex_pct": 72.42
+      },
+      "L1_dcache_load_misses": {
+        "value": 1981746,
+        "unit": null,
+        "multiplex_pct": 71.94
+      },
+      "L1_dcache_loads": {
+        "value": 32282553,
+        "unit": null,
+        "multiplex_pct": 74.45
+      },
+      "dTLB_load_misses": {
+        "value": 144805,
+        "unit": null,
+        "multiplex_pct": 72.11
+      },
+      "dTLB_loads": {
+        "value": 627968,
+        "unit": null,
+        "multiplex_pct": 68.08
+      },
+      "instructions": {
+        "value": 87670333,
+        "unit": null,
+        "multiplex_pct": 68.5
+      },
+      "branches": {
+        "value": 19823145,
+        "unit": null,
+        "multiplex_pct": 72.49
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:19:46.097+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles": {
+        "value": 209836037,
+        "unit": null,
+        "multiplex_pct": 65.95
+      },
+      "L1_dcache_load_misses": {
+        "value": 2062281,
+        "unit": null,
+        "multiplex_pct": 60.68
+      },
+      "L1_dcache_loads": {
+        "value": 34250368,
+        "unit": null,
+        "multiplex_pct": 65.33
+      },
+      "dTLB_load_misses": {
+        "value": 146085,
+        "unit": null,
+        "multiplex_pct": 81.32
+      },
+      "dTLB_loads": {
+        "value": 590797,
+        "unit": null,
+        "multiplex_pct": 79.16
+      },
+      "instructions": {
+        "value": 79905283,
+        "unit": null,
+        "multiplex_pct": 76.92
+      },
+      "branches": {
+        "value": 18972542,
+        "unit": null,
+        "multiplex_pct": 70.65
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:19:56.103+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles": {
+        "value": 196051445,
+        "unit": null,
+        "multiplex_pct": 67.22
+      },
+      "L1_dcache_load_misses": {
+        "value": 1955978,
+        "unit": null,
+        "multiplex_pct": 64.45
+      },
+      "L1_dcache_loads": {
+        "value": 31965539,
+        "unit": null,
+        "multiplex_pct": 72.71
+      },
+      "dTLB_load_misses": {
+        "value": 145245,
+        "unit": null,
+        "multiplex_pct": 64.55
+      },
+      "dTLB_loads": {
+        "value": 600756,
+        "unit": null,
+        "multiplex_pct": 68.1
+      },
+      "instructions": {
+        "value": 86705537,
+        "unit": null,
+        "multiplex_pct": 80.7
+      },
+      "branches": {
+        "value": 19860303,
+        "unit": null,
+        "multiplex_pct": 82.27
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:20:06.114+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles": {
+        "value": 239699952,
+        "unit": null,
+        "multiplex_pct": 74.43
+      },
+      "L1_dcache_load_misses": {
+        "value": 2098251,
+        "unit": null,
+        "multiplex_pct": 69.2
+      },
+      "L1_dcache_loads": {
+        "value": 34548897,
+        "unit": null,
+        "multiplex_pct": 67.45
+      },
+      "dTLB_load_misses": {
+        "value": 144994,
+        "unit": null,
+        "multiplex_pct": 74.21
+      },
+      "dTLB_loads": {
+        "value": 561034,
+        "unit": null,
+        "multiplex_pct": 76.73
+      },
+      "instructions": {
+        "value": 81757383,
+        "unit": null,
+        "multiplex_pct": 70.11
+      },
+      "branches": {
+        "value": 18872625,
+        "unit": null,
+        "multiplex_pct": 67.87
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:20:16.125+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles": {
+        "value": 211123861,
+        "unit": null,
+        "multiplex_pct": 73.44
+      },
+      "L1_dcache_load_misses": {
+        "value": 2080372,
+        "unit": null,
+        "multiplex_pct": 70.85
+      },
+      "L1_dcache_loads": {
+        "value": 34758662,
+        "unit": null,
+        "multiplex_pct": 72.65
+      },
+      "dTLB_load_misses": {
+        "value": 143801,
+        "unit": null,
+        "multiplex_pct": 75.44
+      },
+      "dTLB_loads": {
+        "value": 569065,
+        "unit": null,
+        "multiplex_pct": 72.47
+      },
+      "instructions": {
+        "value": 86120164,
+        "unit": null,
+        "multiplex_pct": 66.57
+      },
+      "branches": {
+        "value": 19615487,
+        "unit": null,
+        "multiplex_pct": 68.61
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:20:26.136+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles": {
+        "value": 194063813,
+        "unit": null,
+        "multiplex_pct": 73.03
+      },
+      "L1_dcache_load_misses": {
+        "value": 2099896,
+        "unit": null,
+        "multiplex_pct": 66.14
+      },
+      "L1_dcache_loads": {
+        "value": 34642664,
+        "unit": null,
+        "multiplex_pct": 64.85
+      },
+      "dTLB_load_misses": {
+        "value": 150443,
+        "unit": null,
+        "multiplex_pct": 73.12
+      },
+      "dTLB_loads": {
+        "value": 536347,
+        "unit": null,
+        "multiplex_pct": 78.85
+      },
+      "instructions": {
+        "value": 79310986,
+        "unit": null,
+        "multiplex_pct": 74.58
+      },
+      "branches": {
+        "value": 18881578,
+        "unit": null,
+        "multiplex_pct": 69.39
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:20:36.147+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles": {
+        "value": 209901699,
+        "unit": null,
+        "multiplex_pct": 77.01
+      },
+      "L1_dcache_load_misses": {
+        "value": 2145733,
+        "unit": null,
+        "multiplex_pct": 81.04
+      },
+      "L1_dcache_loads": {
+        "value": 37864248,
+        "unit": null,
+        "multiplex_pct": 59.87
+      },
+      "dTLB_load_misses": {
+        "value": 138404,
+        "unit": null,
+        "multiplex_pct": 54.1
+      },
+      "dTLB_loads": {
+        "value": 581480,
+        "unit": null,
+        "multiplex_pct": 74.63
+      },
+      "instructions": {
+        "value": 88054326,
+        "unit": null,
+        "multiplex_pct": 76.68
+      },
+      "branches": {
+        "value": 20451384,
+        "unit": null,
+        "multiplex_pct": 76.67
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:20:46.157+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles": {
+        "value": 231517288,
+        "unit": null,
+        "multiplex_pct": 72.67
+      },
+      "L1_dcache_load_misses": {
+        "value": 2330501,
+        "unit": null,
+        "multiplex_pct": 74.16
+      },
+      "L1_dcache_loads": {
+        "value": 47134755,
+        "unit": null,
+        "multiplex_pct": 69.93
+      },
+      "dTLB_load_misses": {
+        "value": 158364,
+        "unit": null,
+        "multiplex_pct": 70.66
+      },
+      "dTLB_loads": {
+        "value": 610282,
+        "unit": null,
+        "multiplex_pct": 68.36
+      },
+      "instructions": {
+        "value": 99799644,
+        "unit": null,
+        "multiplex_pct": 69.92
+      },
+      "branches": {
+        "value": 23390288,
+        "unit": null,
+        "multiplex_pct": 74.31
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:20:56.168+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles": {
+        "value": 201599618,
+        "unit": null,
+        "multiplex_pct": 79.93
+      },
+      "L1_dcache_load_misses": {
+        "value": 2145282,
+        "unit": null,
+        "multiplex_pct": 72.6
+      },
+      "L1_dcache_loads": {
+        "value": 35854562,
+        "unit": null,
+        "multiplex_pct": 69.21
+      },
+      "dTLB_load_misses": {
+        "value": 139974,
+        "unit": null,
+        "multiplex_pct": 73.48
+      },
+      "dTLB_loads": {
+        "value": 593881,
+        "unit": null,
+        "multiplex_pct": 67.39
+      },
+      "instructions": {
+        "value": 87291194,
+        "unit": null,
+        "multiplex_pct": 62.52
+      },
+      "branches": {
+        "value": 19755240,
+        "unit": null,
+        "multiplex_pct": 75.0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:21:06.179+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles": {
+        "value": 216089566,
+        "unit": null,
+        "multiplex_pct": 71.46
+      },
+      "L1_dcache_load_misses": {
+        "value": 2049191,
+        "unit": null,
+        "multiplex_pct": 65.73
+      },
+      "L1_dcache_loads": {
+        "value": 35840904,
+        "unit": null,
+        "multiplex_pct": 69.8
+      },
+      "dTLB_load_misses": {
+        "value": 146556,
+        "unit": null,
+        "multiplex_pct": 75.73
+      },
+      "dTLB_loads": {
+        "value": 606968,
+        "unit": null,
+        "multiplex_pct": 74.9
+      },
+      "instructions": {
+        "value": 97783396,
+        "unit": null,
+        "multiplex_pct": 70.7
+      },
+      "branches": {
+        "value": 22256880,
+        "unit": null,
+        "multiplex_pct": 71.67
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:21:16.190+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles": {
+        "value": 194734441,
+        "unit": null,
+        "multiplex_pct": 77.51
+      },
+      "L1_dcache_load_misses": {
+        "value": 2142547,
+        "unit": null,
+        "multiplex_pct": 74.43
+      },
+      "L1_dcache_loads": {
+        "value": 36063791,
+        "unit": null,
+        "multiplex_pct": 73.55
+      },
+      "dTLB_load_misses": {
+        "value": 134646,
+        "unit": null,
+        "multiplex_pct": 67.08
+      },
+      "dTLB_loads": {
+        "value": 540621,
+        "unit": null,
+        "multiplex_pct": 64.76
+      },
+      "instructions": {
+        "value": 82673607,
+        "unit": null,
+        "multiplex_pct": 71.48
+      },
+      "branches": {
+        "value": 19432688,
+        "unit": null,
+        "multiplex_pct": 71.18
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-06T11:21:17.919+02:00",
+    "pid": 22249,
+    "counters": {
+      "cycles": {
+        "value": 72032808,
+        "unit": null,
+        "multiplex_pct": 68.62
+      },
+      "L1_dcache_load_misses": {
+        "value": 851380,
+        "unit": null,
+        "multiplex_pct": 73.65
+      },
+      "L1_dcache_loads": {
+        "value": 12540946,
+        "unit": null,
+        "multiplex_pct": 85.44
+      },
+      "dTLB_load_misses": {
+        "value": 34157,
+        "unit": null,
+        "multiplex_pct": 80.6
+      },
+      "dTLB_loads": {
+        "value": 204567,
+        "unit": null,
+        "multiplex_pct": 68.58
+      },
+      "instructions": {
+        "value": 39200975,
+        "unit": null,
+        "multiplex_pct": 57.46
+      },
+      "branches": {
+        "value": 8392379,
+        "unit": null,
+        "multiplex_pct": 65.66
+      }
+    }
+  }
+]

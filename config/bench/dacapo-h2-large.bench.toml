@@ -1,0 +1,6 @@
+# dacapo h2 benchmark, large workload
+benchmark = "dacapo"
+sub_benchmark = "h2"
+datasize = "large"
+iterations = 5
+minheap = 10201

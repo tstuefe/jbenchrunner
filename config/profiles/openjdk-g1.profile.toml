@@ -1,0 +1,2 @@
+# G1
+flags = ["-XX:+UseG1GC"]

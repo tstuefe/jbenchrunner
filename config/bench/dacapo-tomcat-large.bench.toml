@@ -1,0 +1,6 @@
+# dacapo tomcat benchmark, large workload
+benchmark = "dacapo"
+sub_benchmark = "tomcat"
+datasize = "large"
+iterations = 5
+minheap = 35

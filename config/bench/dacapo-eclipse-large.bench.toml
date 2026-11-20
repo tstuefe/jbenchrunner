@@ -1,0 +1,6 @@
+# dacapo eclipse benchmark, large workload
+benchmark = "dacapo"
+sub_benchmark = "eclipse"
+datasize = "large"
+iterations = 5
+minheap = 139

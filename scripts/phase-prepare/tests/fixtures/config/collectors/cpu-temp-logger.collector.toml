@@ -1,0 +1,1 @@
+# Host-level collector; independent of the JDK under test, applies to all JDKs.

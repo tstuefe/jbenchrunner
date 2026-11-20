@@ -1,0 +1,22 @@
+# All dacapo small workload benchmarks
+members = [
+    "dacapo-avrora-small",
+    "dacapo-batik-small",
+    "dacapo-biojava-small",
+    "dacapo-cassandra-small",
+    "dacapo-eclipse-small",
+    "dacapo-graphchi-small",
+    "dacapo-h2-small",
+    "dacapo-h2o-small",
+    "dacapo-jme-small",
+    "dacapo-jython-small",
+    "dacapo-kafka-small",
+    "dacapo-luindex-small",
+    "dacapo-lusearch-small",
+    "dacapo-pmd-small",
+    "dacapo-spring-small",
+    "dacapo-sunflow-small",
+    "dacapo-tomcat-small",
+    "dacapo-xalan-small",
+    "dacapo-zxing-small",
+]

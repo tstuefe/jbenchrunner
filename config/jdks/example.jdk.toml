@@ -1,0 +1,12 @@
+# Example JDK config. Each JDK a run can use has a file
+# config/jdks/<name>.jdk.toml; <name> is what .run.toml files refer to
+# (jdkname = "<name>"), and config/jdks/default.jdk.toml is used when a run
+# names none. Copy this file, e.g.
+#
+#   cp config/jdks/example.jdk.toml config/jdks/openjdk-25.jdk.toml
+#
+# and set java_home. The JDK version and type (OpenJDK or OpenJ9) are
+# detected from 'java -version'. See docs/spec-prepare.md.
+
+# The JDK's installation directory (a JAVA_HOME); <java_home>/bin/java is run.
+java_home = "/path/to/jdk"

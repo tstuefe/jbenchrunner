@@ -1,0 +1,6 @@
+# dacapo kafka benchmark, large workload
+benchmark = "dacapo"
+sub_benchmark = "kafka"
+datasize = "large"
+iterations = 5
+minheap = 345

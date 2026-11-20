@@ -1,0 +1,6 @@
+# dacapo avrora benchmark, small workload
+benchmark = "dacapo"
+sub_benchmark = "avrora"
+datasize = "small"
+iterations = 5
+minheap = 5

@@ -1,0 +1,113 @@
+# An example configuration
+
+# *.run.toml files define a benchmark batch to be executed.
+# A benchmark batch consist of 1..n benchmarks executed 1..m times
+# (once per benchmark/run/repeat_cycle/heapsize_factor).
+# Example: five benchmarks, two [[run]] sections, three heapsize_factor entries
+# and repeat=5 will execute 5*2*3*5 = 150 benchmarks in total.
+
+tags = ["example-run"]
+
+# Use this to execute this batch multiple times
+# repeat = 5
+
+# dacapo_iterations: number of iterations per run. Papers differ on what is really needed
+# to stabilize the benchmark. I use min. 20 ... 60 depending on my needs.
+# Note: If you run with >= 20 iterations, jbr will calculate the standard error for you
+# (jbr-ls -o stderr or jbr-ls -o RESULTS) based on the last     n iterations.
+dacapo_iterations = 20
+
+# Use this to specify additional dacapo arguments
+# dacapo_args = ["-t", "4"]
+
+# Use this to specify environment variables to be given to the benchmark
+# jvmenv = { MALLOC_ARENA_MAX = "4" }
+
+# If true and the host supports it, use CPU pinning to separate benchmark from noisy
+# neighbors; also separates collectors from benchmark process.
+do_cpu_pinning = true
+
+# If true and the host supports it, the benchmark will run on a ram disk and therefore
+# be less vulnerable on disk I/O jitter
+use_ramdisk = true
+
+# The collector preset to use.
+# "all" is the most expensive set that delivers the most data, but benchmark throughput may
+# be affected. See config/collector-presets
+collectors_preset = "all-10s"
+# collectors_preset = "cheap-10s"
+
+# If the collector presets don't do what you want, you can specify the collector settings
+# yourself
+# collectors = { interval = 2,
+#                compression = false,
+#                enabled = ["pidstat", "proc", "perf", "nmt"] }
+#
+# Collector settings apply to all runs of this file; they cannot be set per run.
+
+# The perf events to count, if the "perf" collector is enabled. See
+# config/perf-events-presets. If omitted, perf counts its own default event set.
+# perf_events_preset = "basic"
+# jbr-execute checks the resulting perf command once at batch start; if perf
+# rejects it (e.g. an event this CPU does not know), the batch stops there.
+
+# The benchmarks to run
+
+# Use this to specify individual benchmarks
+# bench = ["dacapo-avrora-default",
+#          "dacapo-h2-default"]
+
+# Use this to specify a benchmark set (see config/benchgroup)
+benchgroup = "dacapo-all-default"
+
+# Use this to specify, for all runs, which jdk should be used. Can
+# be overridden for individual runs. Name refers to an entry in
+# config/jdks. If omitted, config/jdks/default.jdk.toml is used.
+jdkname = "openjdk-25"
+
+# Use this to specify, for all runs, a set of JDK options. Can
+# be overridden for individual runs. Name refers to an entry in
+# config/profiles.
+profiles = ["openjdk-g1"]
+
+# Heapsize sweeps:
+# If heapsize_factors is given, each benchmark run (see below) will be executed
+# once for each heapsize factor. The heapsize factor determines the heap size:
+# <benchmark-specific-minimal-heap-size> * <heapsize_factor>. "1.0" means "the
+# smallest heap size the benchmark survives with the most frugal collector and
+# default settings". Note that 1.0 will lead often to OOMs in collectors that are
+# more expensive, especially the ULP ones.
+# For more details, see Blackburn et.al. "Rethinking Java Performance Analysis"
+# https://www.steveblackburn.org/pubs/papers/dacapo-asplos-2025-with-appendix.pdf
+# Note: heap sizes that cannot be accomodated by the machine will be skipped by
+# the scheduler. See machine config, 'max_heap' property, in config/hosts.
+heapsize_factors = [1.8, 4.0, 8.0, 16.0]
+
+# Whether to set Xmx==Xms (dynamic_heap = false) or whether to omit Xms
+# (only matters if we run with heapsize_factors)
+dynamic_heap = false
+
+# Additional global arguments to be applied for every run. Can
+# be overridden for individual runs.
+jvmargs = [
+    "-XX:+UnlockDiagnosticVMOptions",
+    "-XX:+PrintVMInfoAtExit",
+]
+
+# Start of run sections
+# Each [[runs]] section is executed once per benchmark per heapsize
+
+[[runs]]
+# This run measures baseline, default options
+tags = [ "baseline" ]
+
+[[runs]]
+# This run measures with a different set of options
+tags = ["using-coh"]
+jvmargs = [ "-XX:UnlockExperimentalVMOptions", "-XX:+UseCompactObjectHeaders" ]
+
+
+[[runs]]
+# This run measures a different (older) JVM with default options
+tags = ["old-jdk"]
+jdkname = "openjdk-21"

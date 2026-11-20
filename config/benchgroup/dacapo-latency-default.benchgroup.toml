@@ -1,0 +1,9 @@
+# Subset of dacapo benchmarks that measure latency, default size
+members = [
+    "dacapo-h2-default",
+    "dacapo-jme-default",
+    "dacapo-kafka-default",
+    "dacapo-lusearch-default",
+    "dacapo-spring-default",
+    "dacapo-tomcat-default",
+]

@@ -1,0 +1,6 @@
+# dacapo tomcat benchmark, small workload
+benchmark = "dacapo"
+sub_benchmark = "tomcat"
+datasize = "small"
+iterations = 5
+minheap = 14

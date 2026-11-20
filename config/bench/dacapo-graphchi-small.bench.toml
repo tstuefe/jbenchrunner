@@ -1,0 +1,6 @@
+# dacapo graphchi benchmark, small workload
+benchmark = "dacapo"
+sub_benchmark = "graphchi"
+datasize = "small"
+iterations = 5
+minheap = 141

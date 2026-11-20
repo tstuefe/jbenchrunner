@@ -1,0 +1,6 @@
+# dacapo zxing benchmark, small workload
+benchmark = "dacapo"
+sub_benchmark = "zxing"
+datasize = "small"
+iterations = 5
+minheap = 5

@@ -1,0 +1,2 @@
+# OpenJ9 JDK type configuration
+gc_log_option = "-Xverbosegclog:gc.log"

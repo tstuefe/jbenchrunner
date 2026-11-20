@@ -1,0 +1,4 @@
+benchmark = "dacapo"
+sub_benchmark = "h2"
+datasize = "large"
+iterations = 5

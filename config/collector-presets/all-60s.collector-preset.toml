@@ -1,0 +1,5 @@
+# Every collector; compressed, since the System.map and Thread.print logs are large. Update when a
+# new collector is added.
+interval = 60
+compression = true
+enabled = ["cpu_temp", "pidstat", "proc", "perf", "nmt", "system_map", "thread_print"]

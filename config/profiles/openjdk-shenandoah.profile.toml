@@ -1,0 +1,2 @@
+# Shenandoah, default
+flags = ["-XX:+UseShenandoahGC"]

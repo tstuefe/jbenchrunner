@@ -1,0 +1,6 @@
+# dacapo eclipse benchmark, default workload
+benchmark = "dacapo"
+sub_benchmark = "eclipse"
+datasize = "default"
+iterations = 5
+minheap = 167

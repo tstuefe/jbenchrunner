@@ -1,0 +1,6 @@
+# dacapo jme benchmark, large workload
+benchmark = "dacapo"
+sub_benchmark = "jme"
+datasize = "large"
+iterations = 5
+minheap = 29

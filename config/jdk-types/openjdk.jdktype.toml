@@ -1,0 +1,3 @@
+# OpenJDK (HotSpot) JDK type configuration
+gc_log_option = "-Xlog:gc:file=gc.log::filecount=0"
+extra_jvmargs = ["-XX:+PrintFlagsFinal"]

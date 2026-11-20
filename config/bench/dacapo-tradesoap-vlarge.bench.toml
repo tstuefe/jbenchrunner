@@ -1,0 +1,7 @@
+# dacapo tradesoap benchmark, vlarge workload
+benchmark = "dacapo"
+sub_benchmark = "tradesoap"
+datasize = "vlarge"
+iterations = 5
+minheap = 371
+max_java_version = 21

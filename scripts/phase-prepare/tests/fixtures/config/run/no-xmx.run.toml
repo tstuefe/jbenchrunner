@@ -1,0 +1,5 @@
+bench = "bench-h2"
+
+[[runs]]
+jdkname = "jdk-21"
+profiles = ["g1"]

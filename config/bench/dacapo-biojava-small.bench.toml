@@ -1,0 +1,6 @@
+# dacapo biojava benchmark, small workload
+benchmark = "dacapo"
+sub_benchmark = "biojava"
+datasize = "small"
+iterations = 5
+minheap = 7

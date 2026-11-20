@@ -1,0 +1,4 @@
+# jcmd-based collector; HotSpot only (OpenJ9 jcmd has different commands and output).
+
+[[restrict_to]]
+jdk_type = "openjdk"

@@ -1,0 +1,13 @@
+jvmenv = { MALLOC_ARENA_MAX = "1", GLOBAL_ONLY = "g" }
+bench = "bench-h2"
+
+[[runs]]
+jdkname = "jdk-21"
+profiles = ["g1"]
+jvmargs = ["-Xmx2048m"]
+
+[[runs]]
+jdkname = "jdk-21"
+profiles = ["g1"]
+jvmargs = ["-Xmx2048m"]
+jvmenv = { MALLOC_ARENA_MAX = "4" }

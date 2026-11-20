@@ -1,0 +1,6 @@
+# dacapo xalan benchmark, small workload
+benchmark = "dacapo"
+sub_benchmark = "xalan"
+datasize = "small"
+iterations = 5
+minheap = 5

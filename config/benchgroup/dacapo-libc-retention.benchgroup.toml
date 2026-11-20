@@ -1,0 +1,12 @@
+# dacapo benchmarks that seem to gain a lot by reduced libc retention techniques
+members = [
+    "dacapo-eclipse-default",
+    "dacapo-jme-default",
+    "dacapo-jython-default",
+    "dacapo-luindex-default",
+    "dacapo-lusearch-default",
+    "dacapo-pmd-default",
+    "dacapo-spring-default",
+    "dacapo-tomcat-default",
+    "dacapo-xalan-default",
+]

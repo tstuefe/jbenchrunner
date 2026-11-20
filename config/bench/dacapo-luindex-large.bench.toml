@@ -1,0 +1,6 @@
+# dacapo luindex benchmark, large workload
+benchmark = "dacapo"
+sub_benchmark = "luindex"
+datasize = "large"
+iterations = 5
+minheap = 37

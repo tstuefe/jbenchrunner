@@ -1,0 +1,7 @@
+tag = "singular-unknown-field"
+tags = ["warn-test"]
+bench = "bench-h2"
+
+[[runs]]
+jdkname = "jdk-21"
+jvmargs = ["-Xmx2048m"]

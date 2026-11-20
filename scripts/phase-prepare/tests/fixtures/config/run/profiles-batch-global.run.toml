@@ -1,0 +1,8 @@
+# Batch-level profiles default used since the entry omits it
+profiles = ["g1"]
+tags = ["smoke"]
+bench = "bench-h2"
+
+[[runs]]
+jdkname = "jdk-21"
+jvmargs = ["-Xmx2048m"]

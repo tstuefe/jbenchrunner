@@ -1,0 +1,6 @@
+# dacapo cassandra benchmark, small workload
+benchmark = "dacapo"
+sub_benchmark = "cassandra"
+datasize = "small"
+iterations = 5
+minheap = 78

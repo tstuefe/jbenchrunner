@@ -1,0 +1,2 @@
+# OpenJ9, gencon collector
+flags = ["-Xgcpolicy:gencon"]

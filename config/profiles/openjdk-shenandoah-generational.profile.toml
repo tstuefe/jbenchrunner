@@ -1,0 +1,2 @@
+# Shenandoah, Generational, default
+flags = ["-XX:+UseShenandoahGC", "-XX:ShenandoahGCMode=generational"]

@@ -1,0 +1,11 @@
+bench = "bench-h2"
+
+[collectors]
+interval = 10
+compression = false
+enabled = ["cpu_temp", "pidstat", "proc", "nmt"]
+
+[[runs]]
+jdkname = "jdk-21"
+profiles = ["g1"]
+jvmargs = ["-Xmx2048m"]

@@ -1,0 +1,6 @@
+# dacapo lusearch benchmark, large workload
+benchmark = "dacapo"
+sub_benchmark = "lusearch"
+datasize = "large"
+iterations = 5
+minheap = 109

@@ -1,0 +1,8 @@
+# dacapo cassandra benchmark, large workload
+benchmark = "dacapo"
+sub_benchmark = "cassandra"
+datasize = "large"
+iterations = 5
+minheap = 180
+max_java_version = 21
+jvmargs = ["-Djava.security.manager=allow"]

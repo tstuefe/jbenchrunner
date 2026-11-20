@@ -1,0 +1,6 @@
+# dacapo pmd benchmark, default workload
+benchmark = "dacapo"
+sub_benchmark = "pmd"
+datasize = "default"
+iterations = 5
+minheap = 273

@@ -1,0 +1,73 @@
+[
+  {
+    "timestamp": "2026-01-01T10:00:00.000+00:00",
+    "pid": 12345,
+    "total": 976.56,
+    "total_malloc": 48.83,
+    "total_malloc_peak": 53.71,
+    "total_mmap_committed": 927.73,
+    "java_heap": {
+      "mmap_committed": 878.91,
+      "malloc": 0.0,
+      "malloc_peak": 0.0
+    },
+    "class": {
+      "mmap_committed": 4.69,
+      "malloc": 0.2,
+      "malloc_peak": 0.24
+    },
+    "thread": {
+      "mmap_committed": 0.0,
+      "malloc": 0.1,
+      "malloc_peak": 0.15
+    },
+    "code": {
+      "mmap_committed": 0.0,
+      "malloc": 0.29,
+      "malloc_peak": 0.29
+    },
+    "logging": {
+      "mmap_committed": 0.0,
+      "malloc": 0.0,
+      "malloc_peak": 0.1
+    },
+    "native_memory_tracking": {
+      "mmap_committed": 0.0,
+      "malloc": 0.05,
+      "malloc_peak": 0.06
+    },
+    "arena_chunk": {
+      "mmap_committed": 0.0,
+      "malloc": 0.98,
+      "malloc_peak": 1.95
+    }
+  },
+  {
+    "timestamp": "2026-01-01T10:00:05.000+00:00",
+    "pid": 12345,
+    "total": 1074.22,
+    "total_malloc": 58.59,
+    "total_malloc_peak": 63.48,
+    "total_mmap_committed": 1015.62,
+    "java_heap": {
+      "mmap_committed": 878.91,
+      "malloc": 0.0,
+      "malloc_peak": 0.0
+    },
+    "class": {
+      "mmap_committed": 5.66,
+      "malloc": 0.21,
+      "malloc_peak": 0.21
+    },
+    "gccardset": {
+      "mmap_committed": 0.0,
+      "malloc": 0.02,
+      "malloc_peak": 0.03
+    },
+    "arena_chunk": {
+      "mmap_committed": 0.0,
+      "malloc": 1.46,
+      "malloc_peak": 1.95
+    }
+  }
+]
