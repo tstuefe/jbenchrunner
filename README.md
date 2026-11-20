@@ -17,21 +17,16 @@ Planned, will come soon:
 
 ## What it does
 
-Benchmarks are time consuming, and bad runs waste a lot of time and resources. jbenchrunner is a thin,
-opinionated shell around the benchmarks that takes care of this:
+Benchmarks are time consuming, and bad runs waste a lot of time and resources. jbenchrunner makes this a lot easier and less error-prone.
 
-- **Describe, then run.** A batch of runs is described in a `.run.toml` file:
-  which benchmark(s) to run, with which JDKs and flags, heap-size sweeps, repetitions ... All of
-  it is resolved before starting the first run; as many sanity tests as possible are done prior to the actual runs.
-- **Prevent Errors** Prevents or catches many common errors that could taint benchmark results
-- **Record everything.** Every run gets its own result directory with the
-  complete parameters (`info.json`), stdout, stderr, GC log, and a ton of data of
-  optional collectors: CPU and memory (`pidstat`, `/proc`), perf counters,
-  NMT, CPU temperature, and more.
-- **Run unattended.** Batches can be interrupted and resumed. Optional:
-  CPU pinning, running on ramdisk, machine stabilization and automatic shutdown after the run
-- **Compare.** After all runs finished and post-processing is done, the results can be analyzed with a combination of `jbr-filt` and `jbr-ls`, they can be filtered and tabulated, compared
-  against a baseline, and reports can be written.
+- **Define batches.** Define complex benchmark run batches in a simple, convenient markup language.
+- **Schedule batches.** Run large batches of benchmark runs unattended; interrupt them if necessary and resume them later.
+- **Benchmark stability.** Pin runs to CPU sets, stabilize machines for benchmark runs, provide automatic ramdisk support, schedule machine shutdowns.
+- **Prevent Errors** Prevents or catches many common errors that can taint manually executed benchmarks.
+- **Record everything.** Records a ton of metrics during the run: run- and machine-context, log files, and a ton of data of
+  optional collectors (pidstat, perf, procfs, NMT, JVM system map, core temps, etc.)
+- **Analyze.** Completed runs can be tabulated, their statistics examined, every metric compared against a base line, statistical deviations calculated etc.
+- **Reporting.** Reporting allows the generation of html reports or markdown tables for further consumption.
 
 See this `example-reports/collector-shootout-1-full/index.html` for a real-world example of a report.
 
